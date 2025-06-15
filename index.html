@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Photobooth</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+        padding: 2rem;
+        color: #333;
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #1e3a8a;
+      }
+
+      .unit-buttons {
+        margin-bottom: 2rem;
+      }
+
+      .unit-btn {
+        background: #1e40af;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .unit-btn:hover {
+        background: #3b82f6;
+      }
+
+      .gallery {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .gallery.active {
+        display: flex;
+      }
+
+      .gallery-item {
+        width: 180px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .caption {
+        padding: 0.75rem;
+        color: #1e40af;
+        font-weight: bold;
+      }
+
+    @media (max-width: 600px) {
+      .gallery-item {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <h1>PHOTOBOOTH WEB💙</h1>
+    <div class="unit-buttons">
+      <button class="unit-btn" onclick="showGallery('trejo')">TREASURE</button>
+      <button class="unit-btn" onclick="showGallery('nct')">NCT</button>
+      <button class="unit-btn" onclick="showGallery('enha')">ENHYPEN</button>
+      <button class="unit-btn" onclick="showGallery('svt')">SEVENTEEN</button>
+      <button class="unit-btn" onclick="showGallery('bnd')">BOYNEXTDOOR</button>
+      <button class="unit-btn" onclick="showGallery('zodiac')">ZODIAC</button>
+      <button class="unit-btn" onclick="showGallery('wanna1')">WANNAONE</button>
+    </div>
+
+    <div id="trejo" class="gallery active">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jwver/" target="_blank">
+          <img src="frame/frame1.jpg" alt="Frame 1" />
+          <div class="caption">PARK JEONGWOO 💙</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jaehyukver/" target="_blank">
+          <img src="frame/frame2.jpg" alt="Frame 2" />
+          <div class="caption">JAEHYUK</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/junkyuver/" target="_blank">
+          <img src="frame/frame3.jpg" alt="Frame 3" />
+          <div class="caption">JUNKYU</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/junghwanver/" target="_blank">
+          <img src="frame/frame4.jpg" alt="Frame 4" />
+          <div class="caption">JUNGHWAN</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/hyunsukver/" target="_blank">
+          <img src="frame/frame5.jpg" alt="Frame 5" />
+          <div class="caption">HYUNSUK</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/harutover/" target="_blank">
+          <img src="frame/frame6.jpg" alt="Frame 6" />
+          <div class="caption">HARUTO</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/asahiver/" target="_blank">
+          <img src="frame/frame7.jpg" alt="Frame 7" />
+          <div class="caption">ASAHI</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jihoonver/" target="_blank">
+          <img src="frame/frame8.jpg" alt="Frame 8" />
+          <div class="caption">JIHOON</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/doyoungver/" target="_blank">
+          <img src="frame/frame9.jpg" alt="Frame 9" />
+          <div class="caption">DOYOUNG</div>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/yoshiver/" target="_blank">
+          <img src="frame/frame10.jpg" alt="Frame 10" />
+          <div class="caption">YOSHI</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- NCT -->
+    <div id="nct" class="gallery">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/haechanver/" target="_blank">
+          <img src="frame/frame11.jpg" alt="Frame 11" />
+          <div class="caption">HAECHAN</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jaehyunver/" target="_blank">
+          <img src="frame/frame12.jpg" alt="Frame 12" />
+          <div class="caption">JAEHYUN</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/sakuyaver/" target="_blank">
+          <img src="frame/frame21.jpg" alt="Frame 21" />
+          <div class="caption">SAKUYA</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jaeminver/" target="_blank">
+          <img src="frame/frame22.jpg" alt="Frame 22" />
+          <div class="caption">JAEMIN</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jenover/" target="_blank">
+          <img src="frame/frame24.jpg" alt="Frame 24" />
+          <div class="caption">JENO</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/chenlever/" target="_blank">
+          <img src="frame/frame23.jpg" alt="Frame 23" />
+          <div class="caption">CHENLEE</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/renjunver/" target="_blank">
+          <img src="frame/frame25.jpg" alt="Frame 25" />
+          <div class="caption">RENJUN</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jisungver/" target="_blank">
+          <img src="frame/frame26.jpg" alt="Frame 26" />
+          <div class="caption">JISUNG</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/markver/" target="_blank">
+          <img src="frame/frame27.jpg" alt="Frame 27" />
+          <div class="caption">MARK</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/taeyongver/" target="_blank">
+          <img src="frame/frame28.jpg" alt="Frame 28" />
+          <div class="caption">TAEYONG</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ENHA -->
+    <div id="enha" class="gallery">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/sunghoonver/" target="_blank">
+          <img src="frame/frame13.jpg" alt="Frame 13" />
+          <div class="caption">SUNGHOON</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/nikiver/" target="_blank">
+          <img src="frame/frame15.jpg" alt="Frame 15" />
+          <div class="caption">NIKI</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jungwonver/" target="_blank">
+          <img src="frame/frame18.jpg" alt="Frame 18" />
+          <div class="caption">JUNGWON</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- BND -->
+    <div id="bnd" class="gallery">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/taesanver/" target="_blank">
+          <img src="frame/frame16.jpg" alt="Frame 16" />
+          <div class="caption">TAESAN</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- zodiac -->
+    <div id="zodiac" class="gallery">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/zayyanver/" target="_blank">
+          <img src="frame/frame14.jpg" alt="Frame 14" />
+          <div class="caption">ZAYYAN</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- svt -->
+    <div id="svt" class="gallery">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/wonwoover/" target="_blank">
+          <img src="frame/frame17.jpg" alt="Frame 17" />
+          <div class="caption">WONWOO</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jeonghanver/" target="_blank">
+          <img src="frame/frame29.jpg" alt="Frame 29" />
+          <div class="caption">JEONGHAN</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/mingyuver/" target="_blank">
+          <img src="frame/frame30.jpg" alt="Frame 30" />
+          <div class="caption">MINGYU</div>
+        </a>
+      </div>
+    </div>
+
+     <!-- wannaone -->
+    <div id="wanna1" class="gallery">
+      <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/minhyunver/" target="_blank">
+          <img src="frame/frame19.jpg" alt="Frame 19" />
+          <div class="caption">MINHYUN</div>
+        </a>
+      </div>
+       <div class="gallery-item">
+        <a href="https://hymyjwu.github.io/jihoonwanna1ver/" target="_blank">
+          <img src="frame/frame20.jpg" alt="Frame 20" />
+          <div class="caption">JIHOON</div>
+        </a>
+      </div>
+    </div>
+    <script>
+      function showGallery(groupId) {
+        document
+          .querySelectorAll(".gallery")
+          .forEach((gal) => gal.classList.remove("active"));
+        document.getElementById(groupId).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
